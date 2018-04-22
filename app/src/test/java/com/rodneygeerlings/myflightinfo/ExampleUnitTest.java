@@ -1,4 +1,4 @@
-package com.example.rodneygeerlings.myflightinfo;
+package com.rodneygeerlings.myflightinfo;
 
 import org.junit.Test;
 

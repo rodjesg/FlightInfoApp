@@ -1,4 +1,4 @@
-package com.example.rodneygeerlings.myflightinfo;
+package com.rodneygeerlings.myflightinfo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.rodneygeerlings.myflightinfo", appContext.getPackageName());
+        assertEquals("com.rodneygeerlings.myflightinfo", appContext.getPackageName());
     }
 }
