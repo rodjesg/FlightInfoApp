@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">MyflightInfo</string>
+    <string name="greatingtext">Hi!</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_flight">FlightActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="flightButtonName">Flight</string>
+    <string name="contactButtonName">Contacts</string>
+    <string name="weatherButtonName">Weather</string>
 
+    <string name="large_text"></string>
+    <string name="appbar_scrolling_view_behavior" />
 
 </resources>
