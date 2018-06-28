@@ -5,7 +5,7 @@ package com.rodneygeerlings.myflightinfo.models;
 public class Flight {
 
     private String flightDirection;
-    private int flightId;
+    private Long flightId;
     private String flightName;
     private String flightNumber;
     private String scheduleDate;
@@ -15,9 +15,8 @@ public class Flight {
     private String terminal;
     private String gate;
     private String aircraftType;
-    private String landingTime;
 
-    public Flight(String flightDirection, int flightId,String flightName, String flightNumber, String scheduleDate, String scheduleTime, String route, String flightState, String terminal, String gate, String aircraftType, String landingTime) {
+    public Flight(String flightDirection, Long flightId,String flightName, String flightNumber, String scheduleDate, String scheduleTime, String route, String flightState, String terminal, String gate, String aircraftType) {
         this.flightDirection = flightDirection;
         this.flightId = flightId;
         this.flightName = flightName;
@@ -29,19 +28,14 @@ public class Flight {
         this.terminal = terminal;
         this.gate = gate;
         this.aircraftType = aircraftType;
-        this.landingTime = landingTime;
     }
 
-    public Flight(int flightId, String flightName) {
+    public Flight(Long flightId, String flightName) {
         this.flightId = flightId;
         this.flightName = flightName;
     }
 
-    public String getLandingTime() {
-        return landingTime;
-    }
-
-    public int getFlightId(){
+    public Long getFlightId(){
         return flightId;
     }
 

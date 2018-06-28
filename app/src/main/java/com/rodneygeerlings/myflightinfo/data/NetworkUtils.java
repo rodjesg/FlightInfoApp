@@ -18,6 +18,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
+import javax.net.ssl.HttpsURLConnection;
+
 /**
  * These utilities will be used to communicate with the network.
  */
@@ -55,6 +57,7 @@ public class NetworkUtils {
             e.printStackTrace();
         }
 
+        Log.d("url", url.toString());
         return url;
     }
 
@@ -63,7 +66,7 @@ public class NetworkUtils {
      *
      * @return The URL to use to query the Schiphol API.
      */
-    public static URL buildFlightDetailUrl(int flightId) {
+    public static URL buildFlightDetailUrl(Long flightId) {
         Uri builtUri = Uri.parse(FLIGHT_API_BASE_URL + '/' + flightId).buildUpon()
                 .appendQueryParameter(PARAM_APP_KEY, VALUE_APP_KEY)
                 .appendQueryParameter(PARAM_APP_ID, VALUE_APP_ID)
@@ -87,7 +90,7 @@ public class NetworkUtils {
      * @throws IOException Related to network and stream reading
      */
     public static String getResponseFromHttpUrl(URL url) throws IOException {
-        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+        HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
         // set target API version for Schiphol API
         urlConnection.setRequestProperty("ResourceVersion", "v3");
         try {

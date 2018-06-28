@@ -19,7 +19,7 @@ import java.net.URL;
 
 public class FlightDetailActivity extends AppCompatActivity {
 
-    private int flightId;
+    private Long flightId;
     private Flight flight;
 
     private TextView tvFlightName;
@@ -33,7 +33,7 @@ public class FlightDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_flight);
 
         Intent intent = getIntent();
-        flightId = intent.getExtras().getInt("flightId");
+        flightId = intent.getExtras().getLong("FlightId");
         makeFlightDetailQuery(flightId);
 
         tvFlightName = findViewById(R.id.tv_flight_name);
@@ -41,7 +41,7 @@ public class FlightDetailActivity extends AppCompatActivity {
         tvFlightDirection = findViewById(R.id.tv_flight_direction);
     }
 
-    private void makeFlightDetailQuery(int flightId) {
+    private void makeFlightDetailQuery(Long flightId) {
         URL flightDetailUrl = NetworkUtils.buildFlightDetailUrl(flightId);
         new FlightDetailActivity.FlightDetailQueryTask().execute(flightDetailUrl);
     }
@@ -50,19 +50,19 @@ public class FlightDetailActivity extends AppCompatActivity {
 
         // get json data
         JSONObject flightJsonObject = new JSONObject(flightJsonString);
+
         flight = new Flight(
                 flightJsonObject.getString("flightDirection"),
-                flightJsonObject.getInt("flightId"),
+                flightJsonObject.getLong("id"),
                 flightJsonObject.getString("flightName"),
                 flightJsonObject.getString("flightNumber"),
-                flightJsonObject.getString("sheduleDate"),
-                flightJsonObject.getString("sheduleTime"),
+                flightJsonObject.getString("scheduleDate"),
+                flightJsonObject.getString("scheduleTime"),
                 flightJsonObject.getString("route"),
-                flightJsonObject.getString("flightState"),
+                flightJsonObject.getJSONObject("publicFlightState").getJSONArray("flightStates").get(0).toString(),
                 flightJsonObject.getString("terminal"),
                 flightJsonObject.getString("gate"),
-                flightJsonObject.getString("aircraftType"),
-                flightJsonObject.getString("landingTime")
+                flightJsonObject.getString("aircraftType")
         );
     }
 
@@ -70,6 +70,10 @@ public class FlightDetailActivity extends AppCompatActivity {
         tvFlightName.setText(flight.getFlightName());
         tvFlightNumber.setText(flight.getFlightNumber());
         tvFlightDirection.setText(flight.getFlightDirection());
+
+        Log.d("1", flight.getFlightName());
+        Log.d("2", flight.getFlightNumber());
+        Log.d("3", flight.getFlightDirection());
     }
 
     /**
@@ -85,7 +89,7 @@ public class FlightDetailActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(URL... urls) {
             URL flightDetailUrl = urls[0];
-            Log.e("url", flightDetailUrl.toString());
+            Log.d("url", flightDetailUrl.toString());
             String flightDetailResults = null;
             try {
                 flightDetailResults = NetworkUtils.getResponseFromHttpUrl(flightDetailUrl);
