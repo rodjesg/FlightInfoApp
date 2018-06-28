@@ -24,7 +24,8 @@
         </activity>
         <activity android:name="com.rodneygeerlings.myflightinfo.activities.FlightDetailActivity" />
         <activity android:name="com.rodneygeerlings.myflightinfo.activities.ContactActivity" />
-        <activity android:name="com.rodneygeerlings.myflightinfo.activities.WeatherActivity"></activity>
+        <activity android:name="com.rodneygeerlings.myflightinfo.activities.WeatherActivity" />
+        <activity android:name="com.rodneygeerlings.myflightinfo.activities.FavoritesActivity"></activity>
     </application>
 
 </manifest>

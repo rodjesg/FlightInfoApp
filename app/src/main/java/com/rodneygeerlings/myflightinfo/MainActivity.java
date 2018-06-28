@@ -11,9 +11,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.rodneygeerlings.myflightinfo.R;
-import com.rodneygeerlings.myflightinfo.activities.ContactActivity;
+import com.rodneygeerlings.myflightinfo.activities.FavoritesActivity;
 import com.rodneygeerlings.myflightinfo.activities.FlightDetailActivity;
-import com.rodneygeerlings.myflightinfo.activities.WeatherActivity;
 import com.rodneygeerlings.myflightinfo.adapters.FlightRecyclerViewAdapter;
 import com.rodneygeerlings.myflightinfo.data.NetworkUtils;
 import com.rodneygeerlings.myflightinfo.models.Flight;
@@ -25,13 +24,13 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private FlightRecyclerViewAdapter rvAdapter;
     private ArrayList<Flight> flights;
     private RecyclerView rvFlightList;
+    private Button btnFavorites;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +43,15 @@ public class MainActivity extends AppCompatActivity {
         rvFlightList.setAdapter(rvAdapter);
         rvFlightList.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
 
+        btnFavorites = findViewById(R.id.btn_favorites);
+
         // Starts the query
         makeFlightOverviewQuery();
+    }
+
+    public void openFavorites(View view) {
+        Intent intent = new Intent(MainActivity.this, FavoritesActivity.class);
+        startActivity(intent);
     }
 
     /**
