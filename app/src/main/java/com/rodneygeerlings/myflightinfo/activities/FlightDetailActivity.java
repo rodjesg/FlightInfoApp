@@ -32,6 +32,13 @@ public class FlightDetailActivity extends AppCompatActivity {
     private TextView tvFlightName;
     private TextView tvFlightNumber;
     private TextView tvFlightDirection;
+    private TextView tvFlightScheduleDate;
+    private TextView tvFlightScheduleTime;
+    private TextView tvFlightRoute;
+    private TextView tvFlightPublicFlightState;
+    private TextView tvFlightTerminal;
+    private TextView tvFlightGate;
+    private TextView tvFlightAircraftType;
     private Button btnAddToFavorites;
     private SQLiteDatabase database;
     private Long flightId;
@@ -50,6 +57,13 @@ public class FlightDetailActivity extends AppCompatActivity {
         tvFlightName = findViewById(R.id.tv_flight_name);
         tvFlightNumber = findViewById(R.id.tv_flight_number);
         tvFlightDirection = findViewById(R.id.tv_flight_direction);
+        tvFlightScheduleDate = findViewById(R.id.tv_flight_scheduledate);
+        tvFlightScheduleTime = findViewById(R.id.tv_flight_scheduletime);;
+        tvFlightRoute = findViewById(R.id.tv_flight_route);;
+        tvFlightPublicFlightState = findViewById(R.id.tv_flight_publicflightstate);;
+        tvFlightTerminal = findViewById(R.id.tv_flight_flightterminal);;
+        tvFlightGate = findViewById(R.id.tv_flight_gate);;
+        tvFlightAircraftType = findViewById(R.id.tv_flight_aircraftType);;
         btnAddToFavorites = findViewById(R.id.btn_add_to_favorites);
 
         // Create db helpen
@@ -114,6 +128,16 @@ public class FlightDetailActivity extends AppCompatActivity {
         tvFlightName.setText(flight.getFlightName());
         tvFlightNumber.setText(flight.getFlightNumber());
         tvFlightDirection.setText(flight.getFlightDirection());
+        tvFlightAircraftType.setText(flight.getAircraftType());
+        tvFlightPublicFlightState.setText(flight.getFlightState());
+        tvFlightGate.setText(flight.getGate());
+        tvFlightRoute.setText(flight.getRoute());
+        tvFlightScheduleDate.setText(flight.getScheduleDate());
+        tvFlightScheduleTime.setText(flight.getScheduleTime());
+        tvFlightDirection.setText(flight.getFlightDirection());
+        tvFlightTerminal.setText(flight.getTerminal());
+
+
 
         Log.d("1", flight.getFlightName());
         Log.d("2", flight.getFlightNumber());

@@ -10,6 +10,7 @@
         android:id="@+id/tv_flight_item_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
     <Button
         android:id="@+id/btn_view_detail"
         android:layout_width="match_parent"

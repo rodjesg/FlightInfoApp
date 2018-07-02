@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.rodneygeerlings.myflightinfo.R;
+import com.rodneygeerlings.myflightinfo.activities.ContactActivity;
 import com.rodneygeerlings.myflightinfo.activities.FavoritesActivity;
 import com.rodneygeerlings.myflightinfo.activities.FlightDetailActivity;
 import com.rodneygeerlings.myflightinfo.adapters.FlightRecyclerViewAdapter;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Flight> flights;
     private RecyclerView rvFlightList;
     private Button btnFavorites;
+    private Button btnContacts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         rvFlightList.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false));
 
         btnFavorites = findViewById(R.id.btn_favorites);
+        btnContacts = findViewById(R.id.btn_contacts);
 
         // Starts the query
         makeFlightOverviewQuery();
@@ -51,6 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void openFavorites(View view) {
         Intent intent = new Intent(MainActivity.this, FavoritesActivity.class);
+        startActivity(intent);
+    }
+    public void openContacts(View view) {
+        Intent intent = new Intent(MainActivity.this, ContactActivity.class);
         startActivity(intent);
     }
 

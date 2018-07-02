@@ -8,21 +8,33 @@
     tools:context="com.rodneygeerlings.myflightinfo.MainActivity"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <android.support.v7.widget.RecyclerView
+
+
+        <Button
+            android:id="@+id/btn_contacts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rv_flight_list">
-        </android.support.v7.widget.RecyclerView>
+            android:onClick="openContacts"
+            android:text="Contacts" />
+
         <Button
             android:id="@+id/btn_favorites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="openFavorites"
             android:text="Favorieten" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:text="24 hour flights"
+            android:id="@+id/rv_flight_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"></android.support.v7.widget.RecyclerView>
     </RelativeLayout>
 
 

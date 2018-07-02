@@ -9,7 +9,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,16 +36,94 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp" />
             <TextView
+                android:id="@+id/tv_flight_route_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vluchtroute"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_flight_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_flight_scheduledate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vluchtdatum"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_flight_scheduledate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_flight_scheduletime_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vluchttijd"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_flight_scheduletime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_flight_publicflightstate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vluchtstatus"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_flight_publicflightstate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_flight_flightterminal_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminal"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_flight_flightterminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_flight_flightgate_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vluchtgate"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_flight_gate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_flight_aircraftType_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vluchttype"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tv_flight_aircraftType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
                 android:id="@+id/tv_flight_number_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vluchtnummer"
+                android:text="Vluchnummer"
                 android:textSize="12sp" />
             <TextView
                 android:id="@+id/tv_flight_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp" />
+
             <Button
                 android:id="@+id/btn_add_to_favorites"
                 android:layout_width="match_parent"

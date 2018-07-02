@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FlightInfo</string>
+    <string name="search">Buscar</string>
+    <string name="favorites">Favorito</string>
+    <string name="add_to_my_favorites">Agregar a mi Favorito</string>
+    <string name="error_message">Algo salió mal, por favor intente de nuevo.</string>
+    </resources>

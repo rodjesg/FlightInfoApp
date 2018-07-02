@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vluchten</string>
+    <string name="search">Zoeken</string>
+    <string name="favorites">Favorieten</string>
+    <string name="add_to_my_favorites">Voeg toe aan favorieten</string>
+    <string name="error_message">Er ging iets mis, probeer het nogmaals.</string>
+    </resources>
