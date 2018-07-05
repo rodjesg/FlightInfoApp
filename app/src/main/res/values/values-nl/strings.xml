@@ -3,6 +3,8 @@
     <string name="app_name">Vluchten</string>
     <string name="search">Zoeken</string>
     <string name="favorites">Favorieten</string>
+    <string name="contacts">Contacten</string>
     <string name="add_to_my_favorites">Voeg toe aan favorieten</string>
+    <string name="remove_from_favorites">eliminar de mis favoritos </string>
     <string name="error_message">Er ging iets mis, probeer het nogmaals.</string>
     </resources>

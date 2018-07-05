@@ -15,14 +15,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="openContacts"
-            android:text="Contacts" />
+            android:text="@string/contacts" />
 
         <Button
             android:id="@+id/btn_favorites"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="openFavorites"
-            android:text="Favorieten" />
+            android:text="@string/favorites" />
 
     <RelativeLayout
         android:layout_width="fill_parent"

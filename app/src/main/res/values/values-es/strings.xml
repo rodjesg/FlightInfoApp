@@ -3,6 +3,8 @@
     <string name="app_name">FlightInfo</string>
     <string name="search">Buscar</string>
     <string name="favorites">Favorito</string>
+    <string name="contacts">Contactos</string>
     <string name="add_to_my_favorites">Agregar a mi Favorito</string>
+    <string name="remove_from_favorites">Remove from my favorites</string>
     <string name="error_message">Algo salió mal, por favor intente de nuevo.</string>
     </resources>

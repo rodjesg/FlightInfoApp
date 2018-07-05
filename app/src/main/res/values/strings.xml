@@ -2,7 +2,10 @@
     <string name="app_name">MyflightInfo</string>
     <string name="greatingtext">Hi!</string>
     <string name="error_message">Failed to get results, please try again.</string>
+    <string name="favorites">Favorites</string>
+    <string name="contacts">Contacts</string>
     <string name="add_to_my_favorites">Add to my favorites</string>
+    <string name="remove_from_favorites">Remove from my favorites</string>
     <string name="title_activity_contact">ContactActivity</string>
     <string name="title_activity_flight">FlightActivity</string>
     <string name="title_activity_weather">WeatherActivity</string>
