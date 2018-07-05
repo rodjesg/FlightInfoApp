@@ -30,6 +30,8 @@
         android:orientation="vertical">
 
         <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:text="24 hour flights"
             android:id="@+id/rv_flight_list"
             android:layout_width="match_parent"

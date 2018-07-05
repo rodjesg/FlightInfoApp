@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi vuelo Informacióno</string>
+    <string name="greatingtext">Hola</string>
+    <string name="error_message">Algo salió mal, por favor intente de nuevo.</string>
+    <string name="favorites">Favorito</string>
+    <string name="contacts">Contactos</string>
+    <string name="flightinfo">Información de vuelo</string>
+    <string name="add_to_favorites">Agregar a mi Favorito</string>
+    <string name="remove_from_favorites">Eliminar de mis favoritos</string>
+    <string name="favorites_removed_1">Eliminar</string>
+    <string name="favorites_removed_2">de mis favoritos</string>
+    <string name="favorites_added_1">Agregar</string>
+    <string name="favorites_added_2">a mi Favorito</string>
+    <string name="details">Ver detalles</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_flight">FlightActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="flightButtonName">Vuelo</string>
+    <string name="contactButtonName">Contactos</string>
+    <string name="weatherButtonName">El Clima</string>
+    </resources>

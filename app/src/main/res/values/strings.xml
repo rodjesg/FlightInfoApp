@@ -4,8 +4,14 @@
     <string name="error_message">Failed to get results, please try again.</string>
     <string name="favorites">Favorites</string>
     <string name="contacts">Contacts</string>
-    <string name="add_to_my_favorites">Add to my favorites</string>
+    <string name="flightinfo">Flight detail info</string>
+    <string name="add_to_favorites">Add to my favorites</string>
     <string name="remove_from_favorites">Remove from my favorites</string>
+    <string name="favorites_removed_1">Removed</string>
+    <string name="favorites_removed_2">from your favorites</string>
+    <string name="favorites_added_1">Added</string>
+    <string name="favorites_added_2">to your favorites</string>
+    <string name="details">Detail info</string>
     <string name="title_activity_contact">ContactActivity</string>
     <string name="title_activity_flight">FlightActivity</string>
     <string name="title_activity_weather">WeatherActivity</string>

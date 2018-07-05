@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MijnVluchtInfo</string>
+    <string name="greatingtext">Hoi</string>
+    <string name="error_message">Er is iets mis gegaan. Probeer het later nog eens.</string>
+    <string name="favorites">Favorieten</string>
+    <string name="contacts">Contacten</string>
+    <string name="flightinfo">Vlucht details</string>
+    <string name="add_to_favorites">Voeg toe aan favorieten</string>
+    <string name="remove_from_favorites">Verwijder uit fovorieten</string>
+    <string name="favorites_removed_1">Verwijderd</string>
+    <string name="favorites_removed_2">van mijn favorieten</string>
+    <string name="favorites_added_1">toegevoegd</string>
+    <string name="favorites_added_2">aan mijn favorieten</string>
+    <string name="details">Bekijk details</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_flight">FlightActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="flightButtonName">Vlucht</string>
+    <string name="contactButtonName">Contact</string>
+    <string name="weatherButtonName">Weer</string>
+</resources>

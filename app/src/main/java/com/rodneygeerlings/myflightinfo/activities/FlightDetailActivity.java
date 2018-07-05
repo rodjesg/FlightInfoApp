@@ -43,6 +43,7 @@ public class FlightDetailActivity extends AppCompatActivity {
     private SQLiteDatabase database;
     private Long flightId;
 
+
     /* todo: aanvullen met overige json data uit request */
 
     @Override
@@ -70,14 +71,15 @@ public class FlightDetailActivity extends AppCompatActivity {
         FavoritesDbHelper dbHelper = new FavoritesDbHelper(this);
         database = dbHelper.getReadableDatabase();
 
-        // Set favorites button text
         String txtBtnFavorites;
         if (isInFavorites()) {
-            txtBtnFavorites = "Verwijder van favorieten";
+            txtBtnFavorites = getResources().getString(R.string.remove_from_favorites);
         } else {
-            txtBtnFavorites = "Voeg toe aan favorieten";
+            txtBtnFavorites = getResources().getString(R.string.add_to_favorites);
         }
         btnAddToFavorites.setText(txtBtnFavorites);
+
+
 
         // Set on click listener on favorite button
         btnAddToFavorites.setOnClickListener(new View.OnClickListener() {
@@ -85,13 +87,13 @@ public class FlightDetailActivity extends AppCompatActivity {
 
             public void onClick(View v) {
                 if (isInFavorites() && removeFromFavorites()) {
-                    Toast toast = Toast.makeText(getApplicationContext(),"Vlucht " + flight.getFlightName() + " succesvol verwijderd." , duration);
+                    Toast toast = Toast.makeText(getApplicationContext(),getResources().getString(R.string.favorites_removed_1)+" '" + flight.getFlightNumber() + "' " + getResources().getString(R.string.favorites_removed_2), duration);
                     toast.show();
-                    btnAddToFavorites.setText("Voeg toe aan favorieten");
+                    btnAddToFavorites.setText(getResources().getString(R.string.add_to_favorites));
                 } else if (addToFavorites()) {
-                    Toast toast = Toast.makeText(getApplicationContext(), "Vlucht " + flight.getFlightName() + " succesvol toegevoegd.", duration);
+                    Toast toast = Toast.makeText(getApplicationContext(), getResources().getString(R.string.favorites_added_1)+" '" + flight.getFlightNumber() + "' "+getResources().getString(R.string.favorites_added_2), duration);
                     toast.show();
-                    btnAddToFavorites.setText("Verwijder van favorieten");
+                    btnAddToFavorites.setText(getResources().getString(R.string.remove_from_favorites));
                 }
             }
         });
