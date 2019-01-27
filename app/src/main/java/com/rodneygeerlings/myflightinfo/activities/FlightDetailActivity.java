@@ -44,7 +44,6 @@ public class FlightDetailActivity extends AppCompatActivity {
     private Long flightId;
 
 
-    /* todo: aanvullen met overige json data uit request */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
